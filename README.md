@@ -16,4 +16,4 @@ A custom theme for Filament 4 with modified layouts and sidebar styling. Built w
 
 Install the package via Composer:
 ```bash
-composer require yourname/filament-custom-theme
+composer require imfe/filament-glass
