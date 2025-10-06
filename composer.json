@@ -1,0 +1,41 @@
+{
+    "name": "imfe/filament-glass",
+    "description": "Custom theme for Filament 4 with modified layouts and sidebar",
+    "type": "library",
+    "keywords": [
+        "filament",
+        "filament-plugin",
+        "filament-4",
+        "laravel",
+        "theme",
+        "tailwind",
+        "tailwind-4",
+        "admin-panel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IMFE Studio",
+            "email": "efahiim@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3",
+        "filament/filament": "^4.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "IMFE\\FilamentGlass\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IMFE\\FilamentGlass\\FilamentGlassServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
