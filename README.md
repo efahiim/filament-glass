@@ -70,9 +70,6 @@ public function panel(Panel $panel): Panel
         ->id('admin')
         ->path('admin')
         
-        // Register the Filament Glass theme
-        ->viteTheme('resources/css/filament/admin/theme.css')
-        
         // Set your favicon (adjusts path based on environment)
         ->favicon($this->app->environment('production') ? secure_asset('favicon.png') : asset('favicon.png'))
         

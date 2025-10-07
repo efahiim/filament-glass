@@ -14,9 +14,7 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package
-            ->name(static::$name)
-            ->hasViews();
+        $package->name(static::$name);
     }
 
     public function packageBooted(): void
@@ -25,10 +23,10 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
             $this->package->basePath('/../resources/views/components/layout') => resource_path('views/vendor/filament-panels/components/layout'),
             $this->package->basePath('/../resources/views/components/livewire') => resource_path('views/vendor/filament-panels/components/livewire'),
             $this->package->basePath('/../resources/views/components/sidebar') => resource_path('views/vendor/filament-panels/components/sidebar'),
-        ], "{$this->package->shortName()}-views");
+        ], 'filament-glass-views');
 
         $this->publishes([
             $this->package->basePath('/../resources/css/filament/admin/theme.css') => resource_path('css/filament/admin/theme.css'),
-        ], "{$this->package->shortName()}-assets");
+        ], 'filament-glass-assets');
     }
 }
