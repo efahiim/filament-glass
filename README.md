@@ -62,6 +62,7 @@ export default defineConfig({
 In your Filament panel provider (e.g., app/Providers/Filament/AdminPanelProvider.php):
 ```php
 use Filament\Support\Colors\Color;
+use IMFE\FilamentGlass\FilamentGlassPlugin;
 
 public function panel(Panel $panel): Panel
 {
@@ -69,6 +70,8 @@ public function panel(Panel $panel): Panel
         ->default()
         ->id('admin')
         ->path('admin')
+        // Register the theme plugin
+        ->plugin(FilamentGlassPlugin::make())
         
         // Set your favicon (adjusts path based on environment)
         ->favicon($this->app->environment('production') ? secure_asset('favicon.png') : asset('favicon.png'))

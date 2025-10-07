@@ -28,5 +28,7 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
         $this->publishes([
             $this->package->basePath('/../resources/css/filament/admin/theme.css') => resource_path('css/filament/admin/theme.css'),
         ], 'filament-glass-assets');
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'filament-glass');
     }
 }
