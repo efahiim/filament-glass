@@ -7,8 +7,6 @@ use Filament\Panel;
 
 class FilamentGlassPlugin implements Plugin
 {
-    protected bool $shouldPublishAssets = true;
-
     public function getId(): string
     {
         return 'filament-glass';
@@ -16,18 +14,12 @@ class FilamentGlassPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->viteTheme('resources/css/filament/glass/theme.css');
+        $panel->viteTheme('resources/css/filament/admin/theme.css');
     }
 
     public function boot(Panel $panel): void
     {
         //
-    }
-
-    public function publishAssets(bool $condition = true): static
-    {
-        $this->shouldPublishAssets = $condition;
-        return $this;
     }
 
     public static function make(): static

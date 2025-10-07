@@ -1,6 +1,6 @@
 {
     "name": "imfe/filament-glass",
-    "description": "Custom theme for Filament 4 with modified layouts and sidebar",
+    "description": "A beautiful glass-morphism inspired theme for Filament 4",
     "type": "library",
     "keywords": [
         "filament",
@@ -10,7 +10,8 @@
         "theme",
         "tailwind",
         "tailwind-4",
-        "admin-panel"
+        "admin-panel",
+        "glass-morphism"
     ],
     "license": "MIT",
     "authors": [

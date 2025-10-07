@@ -1,0 +1,30 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+
+.imfe-fi-layout-glass {
+    @apply min-h-[100vh];
+}
+
+.imfe-fi-main-glass {
+    @apply my-2 bg-white/80 backdrop-blur-md border border-white/50 shadow-2xl shadow-gray-400/40 dark:bg-gray-700/30 dark:backdrop-blur-md dark:border-gray-600/30 dark:shadow-black/40 rounded-tl-3xl rounded-bl-3xl;
+}
+
+.imfe-fi-topbar-glass {
+    box-shadow: none !important;
+    @apply bg-transparent;
+}
+
+.imfe-fi-sidebar-glass {
+    @apply h-full;
+}
+
+.imfe-fi-logo-glass {
+    @apply px-6 pt-6;
+}
+
+.imfe-fi-sidebar-item-btn-glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-lg shadow-gray-300/50 dark:bg-gray-700/20 dark:border-gray-600/20 dark:shadow-black/35 hover:bg-white/60 hover:backdrop-blur-sm hover:shadow-sm hover:shadow-gray-200/50 focus-visible:bg-white/60 dark:hover:bg-gray-700/40 dark:hover:shadow-sm dark:hover:shadow-black/30 dark:focus-visible:bg-gray-700/40;
+}
