@@ -7,6 +7,7 @@ use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\ServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Livewire\Livewire;
 
 class FilamentGlassServiceProvider extends PackageServiceProvider
 {
