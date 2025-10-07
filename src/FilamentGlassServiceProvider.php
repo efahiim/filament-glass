@@ -5,6 +5,7 @@ namespace IMFE\FilamentGlass;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -30,5 +31,7 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
         ], 'filament-glass-assets');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'filament-glass');
+
+        View::addNamespace('filament-panels', resource_path('views/vendor/filament-panels'));
     }
 }
