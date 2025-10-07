@@ -34,7 +34,7 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
 
         $this->loadViewsFrom(
             $this->package->basePath('/../resources/views'),
-            'filament-glass'
+            'filament-panels'
         );
     }
 }
