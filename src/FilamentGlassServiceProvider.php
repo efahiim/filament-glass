@@ -21,7 +21,7 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
     {
         $this->publishes([
             $this->package->basePath('/../resources/views/components/layout') => resource_path('views/vendor/filament-panels/components/layout'),
-            $this->package->basePath('/../resources/views/components/livewire') => resource_path('views/vendor/filament-panels/components/livewire'),
+            $this->package->basePath('/../resources/views/livewire') => resource_path('views/vendor/filament-panels/livewire'),
             $this->package->basePath('/../resources/views/components/sidebar') => resource_path('views/vendor/filament-panels/components/sidebar'),
         ], 'filament-glass-views');
 
