@@ -7,7 +7,6 @@ use Filament\Support\Facades\FilamentAsset;
 use Illuminate\Support\ServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Livewire\Livewire;
 
 class FilamentGlassServiceProvider extends PackageServiceProvider
 {
@@ -29,8 +28,6 @@ class FilamentGlassServiceProvider extends PackageServiceProvider
         $this->publishes([
             $this->package->basePath('/../resources/css/filament/admin/theme.css') => resource_path('css/filament/admin/theme.css'),
         ], 'filament-glass-assets');
-
-        Livewire::componentNamespace('IMFE\\FilamentGlass\\Http\\Livewire', 'filament-glass');
 
         $this->loadViewsFrom(
             $this->package->basePath('/../resources/views'),
