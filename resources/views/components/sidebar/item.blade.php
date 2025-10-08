@@ -23,7 +23,7 @@
 <li
     {{
         $attributes->class([
-            'fi-sidebar-item',
+            'fi-sidebar-item imfe-fi-sidebar-item',
             'fi-active' => $active,
             'fi-sidebar-item-has-active-child-items' => $activeChildItems,
             'fi-sidebar-item-has-url' => filled($url),
@@ -46,7 +46,7 @@
             "
             x-tooltip.html="tooltip"
         @endif
-        class="fi-sidebar-item-btn imfe-fi-sidebar-item-btn-glass"
+        class="fi-sidebar-item-btn"
     >
         @if (filled($icon) && ((! $subGrouped) || $sidebarCollapsible))
             {{
